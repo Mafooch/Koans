@@ -1,5 +1,4 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
-require 'pry'
 
 class AboutExceptions < Neo::Koan
 

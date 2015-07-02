@@ -1,5 +1,4 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
-require 'pry'
 class AboutNil < Neo::Koan
   def test_nil_is_an_object
     assert_equal(true, nil.is_a?(Object), "Unlike NULL in other languages")
@@ -12,7 +11,6 @@ class AboutNil < Neo::Koan
     begin
       nil.some_method_nil_doesnt_know_about
     rescue Exception => ex
-      # binding.pry
       # What exception has been caught?
       assert_equal(NoMethodError, ex.class)
 

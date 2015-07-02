@@ -1,5 +1,4 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
-require 'pry'
 
 class AboutSymbols < Neo::Koan
   def test_symbols_are_symbols
@@ -46,7 +45,6 @@ class AboutSymbols < Neo::Koan
 
   def test_symbols_can_be_made_from_strings
     string = "catsAndDogs"
-    # binding.pry
     assert_equal(:catsAndDogs, string.to_sym)
   end
 
